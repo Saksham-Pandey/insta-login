@@ -105,4 +105,8 @@ footer{
 	.logo{
 		display: none;
 	}
+	header{
+		padding-left: 50px;
+		padding-top:20% ;
+	}
 }
