@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: rgba(0, 0,0, 0.01);
+}
+
+.box{
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 50px;
+}
+.signup{
+    height:50%;
+	display: flex;
+	flex-direction: column;
+	border:1px solid rgba(125, 125, 125, 0.3);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.insta img{
+	padding-top:20px;
+	width: 50%;
+}
+form input{
+	width: 75%;
+	margin:3px 0;
+    padding: 10px 5px;
+    border:1px solid rgba(125, 125, 125, 0.3);
+    background-color: rgba(0, 0,0, 0.01);
+} 
+form input[type=text]{
+    color: rgba(125, 125, 125, 0.3);
+}
+button{
+	background-color:#0095f6;
+	color:white;
+	margin-top: 12px;
+	margin-bottom: 15px;
+	width: 75%;
+	padding:8px 5px;
+	border: 0 solid white;
+	border-radius: 5px;
+}
+button:hover{
+	cursor: pointer;
+	background-color: royalblue;
+}
+.no{
+    font-size: 1.2em;
+    color: rgba(0, 0,0, 0.5);
+}
+.fo{
+    margin-bottom: 40px;
+    font-size: 85%;
+    color: rgba(0, 0,0, 0.5);
+}
+.signin{
+    padding: 25px 78px;
+    margin: 20px 0;
+    
+    border:1px solid rgba(125, 125, 125, 0.3);
+    color: rgba(0, 0, 0, 0.9);
+}
+.fonts{
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+        
+}
+.fo a{
+    color:rgba(0, 0,0, 0.8);
+}
+.signin a{
+	color:#0095f6;
+}
+footer{
+    margin-top:60px;
+    text-align: center;
+    font-size: 80%;
+}
+
