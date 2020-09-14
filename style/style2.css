@@ -2,8 +2,11 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
-
+a{
+    text-decoration: none;
+}
 .mainhead{position: fixed;
     width: 100%;
     display:flex;
@@ -25,25 +28,24 @@
     width: 200px;
     height: 25px;
     text-align: center;
-    color: rgba(0, 0, 0, 0.1);
+    
     border: 0.5px solid rgba(125, 125,125, 0.5);
 }
 main{width: 100%;
     
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    text-align: center;
 }
 .one{
-    width:20%;
+    width:10%;
 }
 .two{
-    width:50%;
+    width:40%;
 }
 .three{
     margin-left:0;
-    width: 25%;
+    width: 30%;
+    
 }
 .box1{
     margin-top: 80px;
@@ -51,11 +53,91 @@ main{width: 100%;
     height: 15vh;
     border: 1px solid rgba(125, 125,125, 0.5);
     overflow:hidden;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .box1 img{
-    height: 14vh;
-    width: 10%;
+    padding: 5px 0;
+    height: 15vh;
+    width: 12%;
+    margin: 0 1px;
 }
-
-
-
+.box21{
+    border: 1px solid rgba(125, 125,125, 0.5);
+    margin: 40px 0;
+}
+.head{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom:1px solid rgba(125, 125,125, 0.5) ;
+}
+.log img{
+    margin: 5px 20px;
+    width: 50px;
+}
+i{
+    padding-right: 10px;
+}
+.name a{
+    color: black;
+}
+.ima img{
+    width:100%;
+    height:98%;
+    
+}
+.likebar img{
+    width: 24;
+    height: 24;
+    margin: 10px 3px;
+    
+}
+.likebar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+.book{
+    margin-right: 5px;
+}
+.commentbar{
+    margin: 5px 10px;
+    
+}
+.commentbar a{
+    font-weight: bold;
+    color : black;
+    padding: 20px 0;
+}
+.view a,.time{
+    color: rgba(125,125,125,0.5);
+}
+.add{
+    margin: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1px solid rgba(125, 125,125, 0.5) ;
+}
+.add input{
+    border:none;
+    text-align: left;
+}
+.add input[type=text]{
+    padding: 10px 40%;
+}
+.add a{
+    color:#0095f6;
+}
+@media(max-width:900px)
+{
+    .one,.three{
+        display: none;
+    }
+    .two{
+        width: 98%;
+    }
+}
