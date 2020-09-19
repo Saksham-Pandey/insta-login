@@ -14,12 +14,12 @@
 	     	<div class="login">
 	     		<div class="insta"><img src="img/2.jfif"></div>
 	     		<form>	     			
-	     			<input type="text" name="email" placeholder="Phone number,username or email">
+	     			<input id="username" type="text" name="email" placeholder="Phone number,username or email" required>
 	     			<br>
-	     			<input type="password" name="password" placeholder="password">
-	     			<br> 			
+	     			<input id="password" type="password" name="password" placeholder="password" required>
+					 <br> 
+					 <button type="button" onclick="getinfo()">Log IN</button>			
 				 </form>
-				 <a href="login.html"><button>Log IN</button></a>
 	     		<div>--------------------OR--------------------</div>
 	     		<div class="lo"><a href="#"><i class="fa fa-facebook-official"></i> Log in with Facebook</a></div>
 	     		<div class="fo"><a href="#">Forgot password?</a></div>
@@ -39,5 +39,6 @@
 	 <footer>
 		<div>&copy; 2020 INSTAGRAM FROM FACEBOOK</div>
 	 </footer>
+	 <script src="javascript.js" ></script>
 </body>
 </html>
