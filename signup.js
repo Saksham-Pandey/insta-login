@@ -1,11 +1,15 @@
 
 function sign(){
-    var a = document.getElementsById("email").value;
-    var b = document.getElementsById("FullName").value;
-    var c = document.getElementsById("Username").value;
-    var d = document.getElementsById("password").value;
-    if(a==''||b==''||c==''||d=='')
+    var Email = document.getElementById("Email").value
+    var FullName = document.getElementById("FullName").value
+    var Username = document.getElementById("Username").value
+    var Password = document.getElementById("Password").value
+    if(Email==='' &&FullName==='' &&Username==='' &&Password==='' )
     {
         alert("Information Not Provided");
+    }
+    else
+    {
+        alert("hello");
     }
 }

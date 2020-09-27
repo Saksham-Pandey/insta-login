@@ -19,6 +19,7 @@ header{
 .logo img{
 	height: 85%;
 	width: 80%;
+	pointer-events: none;
 }
 .login{
 	height:50%;
@@ -30,6 +31,7 @@ header{
 .insta img{
 	padding-top:10px;
 	width: 70%;
+	pointer-events: none;
 }
 form input{
 	width: 70%;

@@ -26,5 +26,9 @@ function getinfo(){
             location="login.html"
         }
     }
-    
+
+    if(username===''||password==='')
+    {
+        alert("incorrect username and password")
+    }
 }
