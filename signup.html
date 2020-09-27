@@ -13,16 +13,16 @@
             <div class="no">Sign up to see photos and videos 
                 <br>
                 from your friends.</div>
-            <form>	     			
-                <input type="text" name="email" placeholder="Mobile Number or Email">
+            <form onsubmit="sign()">	     			
+                <input id="email" type="text" Name="email" placeholder="Mobile Number or Email">
                 <br>
-                <input type="text" name="Full Name" placeholder="Full Name">
+                <input id="FullName" type="text" Name="Full Name" placeholder="Full Name">
                 <br>
-                <input type="text" name="Full Name" placeholder="Username">
+                <input id="Username" type="text" Name="Username" placeholder="Username">
                 <br>
-                <input type="password" name="password" placeholder="password">
+                <input id="password" type="password" Name="password" placeholder="password">
                 <br>
-                <button>Sign up</button>
+                <button type="submit" onclick="sign()">Sign up</button>
             </form>
             
             
@@ -44,5 +44,6 @@
             &copy; 2020 INSTAGRAM FROM FACEBOOK
         </div>
     </footer>
+    <script src="signup.js" ></script>
 </body>
 </html>

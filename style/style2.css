@@ -3,6 +3,10 @@
     padding:0;
     box-sizing: border-box;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    
+}
+button{
+    outline: none;
 }
 a{
     text-decoration: none;
@@ -14,7 +18,7 @@ a{
     align-items: center;
      border-bottom:1px solid rgba(125, 125,125, 0.5);   
      background-color: rgb(255, 255, 255); 
-    
+    z-index: 11;
 }
 .logo img{
     width: 150px;
@@ -35,26 +39,83 @@ main{width: 100%;
     
     display: flex;
     justify-content: space-around;
+    background-color:#eee ;
+    
 }
+.popup .overlay {
+    position:fixed;
+   top:0px;
+   left:0px;
+   width:100vw;
+   height:100vh;
+   background:rgba(0,0,0,0.6);
+   z-index:13;
+   display:none;
+
+ }
+ .popup .content {
+   position:fixed;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%) scale(0);
+   background:rgba(250, 250, 250, 1);
+   width:380px;
+   height:45vh;
+   z-index:14;
+   border-radius: 10px;
+   display:flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   line-height: 40px;
+   pointer-events: auto;
+ }
+ .content a{
+        padding: 3px 0;
+        border-bottom: 0.5px solid grey;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 500;
+        color:grey;
+ }
+ #red{
+     color:red;
+     font-weight: 600;
+ }
+ .popup.active .overlay {
+   display:block;
+ }
+ 
+ .popup.active .content {
+   transition:all 100ms ease-in-out;
+   transform:translate(-50%,-50%) scale(1);
+ }
+ 
+ 
 .one{
     width:10%;
+    background-color: #eee ;
 }
 .two{
     width:40%;
+    background-color:  #eee ;
 }
 .three{
-    margin-left:0;
+    
+    margin-left:-100px;
     width: 30%;
+    background-color: #eee ;
+    margin-top:100px;
     
 }
 .box1{
-    margin-top: 80px;
+    margin:80px 0 20px -40px;
     width: 100%;
     height: 15vh;
     border: 1px solid rgba(125, 125,125, 0.5);
     overflow:hidden;
     text-align: center;
-    margin-bottom: 20px;
+    background-color: white;
 }
 .box1 img{
     padding: 5px 0;
@@ -64,7 +125,9 @@ main{width: 100%;
 }
 .box21{
     border: 1px solid rgba(125, 125,125, 0.5);
-    margin: 40px 0;
+    margin: 40px 0 40px -40px;
+    background-color: white;
+    width: 100%;
 }
 .head{
     display: flex;
@@ -81,14 +144,25 @@ main{width: 100%;
 i{
     padding-right: 10px;
     color: black;
+    
 }
 .name a{
     color: black;
 }
-.ima img{
-    width:100%;
-    height:98%;
+.name{
     
+position: relative;
+    right:200px;
+    z-index: 9;
+}
+.ima img,.ima video{
+    width:100%;
+    height:60vh;
+}
+button{
+    background: none;
+    color: none;
+    border: none;
 }
 .likebar img{
     width: 24;
@@ -132,6 +206,66 @@ i{
 }
 .add a{
     color:#0095f6;
+}
+.wrapper{
+    position: fixed;
+    width:300px; 
+    
+}
+.profile{
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.profileName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 80%;
+    margin-right: 50px;
+}
+.profileName a{
+    color: black;
+}
+.pimg img{
+    border-radius: 50%;
+    width: 70px;
+}
+.suggestions{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    margin-left: 20px;
+}
+.follower1{
+    display: flex;
+    justify-content: space-between;
+}
+.follower1 img{
+    width: 50px;
+    border-radius: 50%;
+}
+.followerProfile{
+    display: flex;
+    margin:0px 5px;
+}
+.follower1 button{
+    color:#0095f6;
+    font-weight: 500;
+}
+footer{
+    margin: 20px 0;
+    font-size: 80%;
+}
+footer a{
+    color: grey;
+    margin: 5px 5px;
+}
+.foot{
+    margin: 20px 0;
+    font-size: 95%;
 }
 @media(max-width:900px)
 {

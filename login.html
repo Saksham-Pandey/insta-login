@@ -13,7 +13,7 @@
             <div class="in"><input type="text" placeholder="Search"></div>
             <div class="instaf">
                 <a href="#"><img src="img/home.png" alt="home"></a>
-                <a href="#"><img src="img/direct.png" alt="direct"></a>
+                <a href="#"><img src="img/c2.jpg" alt="direct"  ></a>
                 <a href="#"><img src="img/explore.png" alt="Explore"></a>
                 <a href="#"><img src="img/activity.png" alt="activity"></a>
                 <a href="#"><img src="img/profile.jpg" alt="Profile"></a>
@@ -21,6 +21,19 @@
         </div>
     </header>
     <main>
+        <div class="popup" id="popup-1">
+            <div class="overlay" onclick="togglePopup()" ></div>
+            <div class="content">
+              <a href="#" id="Red">Report</a>
+              <a href="#" id="Red">Unfollow</a>
+              <a href="#">Go to post</a>
+              <a href="#">Share</a>
+              <a href="#">Copy Link</a>
+              <a href="#">Embed</a>
+              <a href="#" style="border: none;" onclick="togglePopup()" >Cancel</a>
+            </div>
+        </div>
+          
         <div class="one"></div>
         <div class="two">
             <div class="box1">
@@ -40,18 +53,17 @@
                 <div class="head">
                     <div class="log"><img src="img/log1.jpg" alt="log1"></div>
                     <div class="name"><a href="#">laughtercolours</a></div>
-                    <div><a href="#"><i class="fa fa-ellipsis-h"></i></a></div>
-                    
+                    <div><button onclick="togglePopup()" ><i class="fa fa-ellipsis-h fa-2x"></i></button></div>
                 </div>
-                <div class="ima"><img src="img/p2.jpg" alt="p1"></div>
+                <div class="ima"><img src="img/p3.jpg" alt="p1"></div>
                 <div class="likebar">
                     <div class="lcb">
-                        <a href="#"><img src="img/l1.jpg" alt="like"></a>
+                       <button onclick="like()" ><img id="like" src="img/l1.jpg"  ></button>
                         <a href="#"><img src="img/comment.jpg" alt="comment"></a>
                         <a href="#"><img src="img/c2.jpg" alt="msg"></a>
                     </div>
                     <div class="book">
-                        <a href="#"><img src="img/bookmark.jpg" alt="bookmark"></a>
+                        <button onclick="book2()" ><img id="book2" src="img/bookmark.jpg"  ></button>
                     </div>
                 </div>
                 <div class="commentbar">
@@ -72,18 +84,17 @@
                 <div class="head">
                     <div class="log"><img src="img/log2.jpg" alt="log1"></div>
                     <div class="name"><a href="#">the_engineer_bro</a></div>
-                    <div><a href="#"><i class="fa fa-ellipsis-h"></i></a></div>
-                    
+                    <div><button onclick="togglePopup()" ><i class="fa fa-ellipsis-h fa-2x"></i></button></div>
                 </div>
-                <div class="ima"><img src="img/p3.jpg" alt="p1"></div>
+                <div class="ima"><img src="img/p5.jpg" alt="p1"></div>
                 <div class="likebar">
                     <div class="lcb">
-                        <a href="#"><img src="img/l1.jpg" alt="like"></a>
+                        <button onclick="likes()" ><img id="likes" src="img/l1.jpg"  ></button>
                         <a href="#"><img src="img/comment.jpg" alt="comment"></a>
                         <a href="#"><img src="img/c2.jpg" alt="msg"></a>
                     </div>
                     <div class="book">
-                        <a href="#"><img src="img/bookmark.jpg" alt="bookmark"></a>
+                        <button onclick="book3()" ><img id="book3" src="img/bookmark.jpg"  ></button>
                     </div>
                 </div>
                 <div class="commentbar">
@@ -91,7 +102,37 @@
                     <div class="view"><a href="#">View all 5 comments</a></div>
                     <div class="c1"><a href="#">dm_livesunita</a><span> Amazing ❤😯</span></div>
                     <div><a href="#">ravikant_honey_yadav</a><span> Hindi me Post kro</span></div>
-                    <div class="time">2 Hour Ago</div>
+                    <div class="time"> Hour Ago</div>
+                </div>
+                <div class="add">
+                    <div><input type="text" placeholder="Add a comment"></div>
+                    <div><a href="#">Post</a></div>
+                </div>
+            </div>
+
+            <div class="box21">
+                <div class="head">
+                    <div class="log"><img src="img/log2.jpg" alt="log1"></div>
+                    <div class="name"><a href="#">the_engineer_bro</a></div>
+                    <div><button onclick="togglePopup()" ><i class="fa fa-ellipsis-h fa-2x"></i></button></div>
+                </div>
+                <div class="ima"><video src="img/v1.mp4" controls></video></div>
+                <div class="likebar">
+                    <div class="lcb">
+                        <button onclick="likes1()" ><img id="likes1" src="img/l1.jpg"  ></button>
+                        <a href="#"><img src="img/comment.jpg" alt="comment"></a>
+                        <a href="#"><img src="img/c2.jpg" alt="msg"></a>
+                    </div>
+                    <div class="book">
+                        <button onclick="book4()" ><img id="book4" src="img/bookmark.jpg"  ></button>
+                    </div>
+                </div>
+                <div class="commentbar">
+                    <div>764 likes</div>
+                    <div class="view"><a href="#">View all 5 comments</a></div>
+                    <div class="c1"><a href="#">dm_livesunita</a><span> Amazing ❤😯</span></div>
+                    <div><a href="#">ravikant_honey_yadav</a><span> Hindi me Post kro</span></div>
+                    <div class="time"> Hour Ago</div>
                 </div>
                 <div class="add">
                     <div><input type="text" placeholder="Add a comment"></div>
@@ -100,8 +141,91 @@
             </div>
         </div>
         <div class="three">
-            
+            <div class="wrapper">
+                <div class="profile">
+                    <div class="pimg"><img src="img/profile.jpg" alt="Profile"></div>
+                    <div class="profileName">
+                        <div><h3><a href="#">pandey.saksham0</a></h3></div>
+                        <div>Saksham Pandey</div>
+                    </div>
+                </div>
+                
+                <div class="suggestions">
+                    <div class="sugg">Suggestions For You</div>
+                    <div style="font-weight:500">See All</div>
+                </div>
+                <div class="follower1">
+                    <div class="followerProfile">
+                        <img src="img/f1.jpg" alt="img/f4.jpg">
+                        <div class="profileName">
+                            <div><h4><a href="#">aditya_21_._</a></h4></div>
+                            <div id="1" onclick="follow()">followed by sanchit_807</div>  
+                        </div>
+                    </div>
+                    <button id="follow" onclick="follow()">Follow</button>
+                </div>
+                <div class="follower1">
+                    <div class="followerProfile">
+                        <img src="img/f2.jpg" alt="img/f4.jpg">
+                        <div class="profileName">
+                            <div><h4><a href="#">HackerBRO</a></h4></div>
+                            <div>Suggested for You</div>  
+                        </div>
+                    </div>
+                    <button id="follow2" onclick="follow2()">Follow</button>
+                </div>
+                <div class="follower1">
+                    <div class="followerProfile">
+                        <img src="img/f3.jpg" alt="img/f4.jpg">
+                        <div class="profileName">
+                            <div><h4><a href="#">bino.d5840</a></h4></div>
+                            <div>followed by Deepak007</div>  
+                        </div>
+                    </div>
+                    <button id="follow3" onclick="follow3()">Follow</button>
+                </div>
+                <div class="follower1">
+                    <div class="followerProfile">
+                        <img src="img/f4.jpg" alt="img/f4.jpg">
+                        <div class="profileName">
+                            <div><h4><a href="#">Shivam_001</a></h4></div>
+                            <div>followed by Deep</div>  
+                        </div>
+                    </div>
+                    <button id="follow4" onclick="follow4()">Follow</button>
+                </div>
+                <div class="follower1">
+                    <div class="followerProfile">
+                        <img src="img/f5.jpg" alt="img/f4.jpg">
+                        <div class="profileName">
+                            <div><h4><a href="#">Vaibhav098</a></h4></div>
+                            <div>Suggested for you</div>  
+                        </div>
+                    </div>
+                    <button id="follow5" onclick="follow5()">Follow</button>
+                </div>
+                <footer>
+                    <div class="about">
+                        <a href="#">About</a>
+                        <a href="#">Help</a>
+                        <a href="#">Press</a>
+                        <a href="#">API</a>
+                        <a href="#">Jobs</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Location</a>
+                        <a href="#">Top accounts</a>
+                        <a href="#">Hashtags</a>
+                        <a href="#">Language</a>
+                    </div>
+
+                    <div class="foot">
+                        <P>&copy; 2020 INSTAGRAM FROM FACEBOK</P>
+                    </div>
+                </footer>
+            </div>
         </div>
     </main>
+    <script src="login.js" ></script> 
 </body>
 </html>
