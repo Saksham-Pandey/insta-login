@@ -43,16 +43,30 @@ function like()
            }	
    } 
 
-   function book2()
+   function likes2()
    {
        if(temp==true)
            {
-           document.getElementById('book2').src="img/bookmark2.jpeg";
+           document.getElementById('likes2').src="img/like2.jpeg";
            temp=false;  
            }
        else
            {
-           document.getElementById('book2').src="img/bookmark.jpg";
+           document.getElementById('likes2').src="img/l1.jpg";
+           temp=true;
+           }	
+   }
+
+   function book5()
+   {
+       if(temp==true)
+           {
+           document.getElementById('book5').src="img/bookmark2.jpeg";
+           temp=false;  
+           }
+       else
+           {
+           document.getElementById('book5').src="img/bookmark.jpg";
            temp=true;
            }	
    }
